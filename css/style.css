@@ -1,0 +1,595 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?qv0psb');
+  src:  url('../fonts/icomoon.eot?qv0psb#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?qv0psb') format('truetype'),
+    url('../fonts/icomoon.woff?qv0psb') format('woff'),
+    url('../fonts/icomoon.svg?qv0psb#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-phone:before {
+  content: "\e942";
+}
+.icon-envelop:before {
+  content: "\e945";
+}
+.icon-menu:before {
+  content: "\e9bd";
+}
+.icon-cancel-circle:before {
+  content: "\ea0d";
+}
+
+
+
+*{
+	box-sizing: border-box;
+}
+html{
+	font-size: 100%;
+	line-height: 1.2em;
+}
+body{
+	font-family: 'Allerta', sans-serif;
+	margin: 0;
+}
+h1{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 4.2em;
+	color: #fff;
+	margin-top: 85px;
+	margin-bottom: 40px;
+}
+h2{
+	color: #fff;
+	margin-bottom: 30px;
+}
+h3{
+	font-size: 3.2em;
+	color: #1F313C;
+	margin-left: 30px;
+}
+
+
+
+/*----- Portada -----*/
+
+.portada{
+	background-image: url(../images/background.png);
+	background-size: cover;
+}
+.wrap{
+	width: 800px;
+	margin: 0 auto;
+}
+.header__logo{
+	margin: 30px 5px;
+}
+.header{
+	position: relative;
+	overflow: hidden;
+}
+.header__nav{
+	margin: 30px 5px;
+	float: right;
+}
+.header__nav ul{
+	color: #fff;
+}
+.header__nav li{
+	margin-left: 24px;
+	display: inline-block;
+}
+.header__nav li:before{
+	content: '∘';
+	font-size: 2.2em;
+	margin-right: 10px;
+}
+.header__nav a{
+	font-size: 1.5em;
+	text-decoration: none;
+	color: #fff;
+}
+.portada span{
+	text-decoration: underline;
+}
+.portada__btn{
+	background: linear-gradient(to left, #fe344e, #ff7250);
+	color: #fff;
+	font-family: inherit;
+	font-size: 1.2em;
+	padding: 6px 10px;
+	border-radius: 10px;
+	border: none;
+	margin-bottom: 160px;
+}
+.portada__btn a{
+	color: #fff;
+	text-decoration: none;
+}
+
+/*-------burguer button-----*/
+.burguer__btn{
+	color: #fff ;
+	text-decoration: none !important;
+	width: 40px;
+	background: #395667;
+	border-radius: 50%;
+	line-height: 40px;
+	height: 40px;
+	display: inline-block;
+	text-align: center;
+	position: fixed;
+	left: 15px;
+	top: 27px;
+	z-index: 3;
+	display: none;
+}
+
+/*----- Principal-----*/
+
+.main{
+	height: 630px;
+}
+.main__title{
+	margin-top: 40px;
+	margin-left: 0;
+	font-size: 2.2em;
+	color: #1F313C;
+	font-family: 'Montserrat', sans-serif;
+}
+.wrapper__a{
+	width: 400px;
+	margin-top: 80px;
+	margin-bottom: 30px;
+}
+.wrapper__b{
+	margin-left: 350px;
+	width: 400px;
+	margin-bottom: 30px;
+}
+.main__guitarra{
+	margin: 40px 10px;
+	border: 1px solid #1f313c;
+	border-radius: 7px;
+}
+.main__img--a{
+	width: 45%;
+	float: right;
+	position: relative;
+	bottom: 113px;
+}
+.main__img--b{
+	float: left;
+	width: 50%;
+	position: relative;
+}
+
+/*-----Footer-----*/
+
+.footer{
+	width: 100%;
+	height: 300px;
+	background-color: #273b47;
+}
+.footer .wrap{
+	display: flex;
+	justify-content: space-between;
+}
+.footer__contacto{
+	width: 47%;
+	margin-top: 65px;
+}
+.footer__contacto img{
+	margin-bottom: 40px;
+}
+.footer__contacto--mod{
+	display: flex;
+}
+.footer__contacto a{
+	text-decoration: none;
+	color: #fff;
+}
+.footer__form{
+	color: #fff;
+	width: 51%;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 40px;
+}
+.footer__form label{
+	margin: 10px 5px 5px 0;
+}
+.footer__form input{
+	margin: 10px 5px 0 0;
+}
+.footer__form--col1{
+	width: 48%;
+	margin-right: 2%;
+}
+.form--sexo{
+	margin: 10px 0;
+}
+.form--checkbox{
+	font-size: .75em;
+}
+.footer__form--col2{
+	width: 50%;
+}
+.footer__form--col2 textarea{
+	margin: 10px 0 10px 0;
+}
+.footer__form--col2 .btn{
+	background: linear-gradient(to left, #fe344e, #ff7250);
+	color: #fff;
+	font-family: inherit;
+	font-size: 1.2em;
+	padding: 6px 10px;
+	border-radius: 10px;
+	border: none;
+}
+
+/*----- Precios.html-----*/
+
+table{
+	width: 100%;
+	margin: 50px 0;
+}
+th{
+	background: #273B47;
+	color: white;
+	padding: 10px;
+	text-align: left;
+	padding-left: 20px;
+}
+td{
+	padding: 20px;
+}
+table, td, th{
+	border: 1px solid #273b47;
+	border-collapse: collapse;
+}
+
+					/*-----media-queries for tablet 800px------*/
+
+@media screen and (max-width: 800px){
+
+	.wrap{
+		width: 100%;
+	}
+	h1{
+		font-size: 3.5em;
+		margin-top: 30px;
+	}
+	h2{
+		font-size: 1.3em;
+	}
+	h3{
+		font-size: 2.7em;
+		margin-left: 0;
+	}
+
+	/*---- portada----*/
+	.main{
+		height: auto;
+	}
+	.portada__btn{
+		margin-bottom: 40px;
+	}
+	/*-----principal------*/
+	.main__guitarra{
+		text-align: center;
+	}
+	.main__img--a, .main__img--b{
+		float: none;
+		position: static;
+		margin-top: 0;
+	}
+	.wrapper__a, .wrapper__b{
+		width: 90%;
+		margin: 0 auto;
+	}
+	.wrapper__a li, .wrapper__b li{
+		list-style-type: none;
+	}
+	/*----------precio.hmtl------*/
+
+	.tabla .contenedor{
+		margin: 20px 10px;
+		overflow: auto;
+		border: 1px solid #273b47;
+	}
+	.contenedor table{
+		margin: 0;
+	}
+	/*-----footer-----*/
+	.footer__contacto{
+		width: 40%;
+	}
+	.footer__form{
+		width: 54%;
+		overflow: hidden;
+	}
+
+}
+
+				/*-----media-querie mobile--720px-----*/
+
+@media screen and (max-width: 720px){
+	h1{
+		margin: 25px 0;
+		font-size: 3em;
+	}
+	h2{
+		margin-bottom: 25px;
+		font-size: 1.1em;
+	}
+	h3{
+		font-size: 2.6em;
+		margin: 25px;
+	}
+
+	/*-----header and portada-----*/
+
+	.wrap{
+		width: 100%;
+		text-align: center;
+	}
+	.header__logo{
+		margin: 15px 0 0 0;
+	}
+	.header__nav{
+		float: none;
+	}
+	.header__nav ul{
+		padding: 0;
+	}
+	.header__nav li{
+		display: inline;
+		margin: 5px 0;
+		width: 100%;
+	}
+	.header__nav a{
+		margin: 10px;
+	}
+	.portada__btn{
+		font-size: 1.2em;
+		margin-bottom: 60px;
+	}
+
+	/*-----principal-----*/
+	.main__title{
+		margin-top: 20px;
+	}
+	.main__guitarra{
+		margin: 10px;
+	}
+	.wrapper__a ol, .wrapper__b ol{
+		padding-left: 0;
+	}
+
+	/*-----footer-----*/
+
+	.footer{
+		height: auto;
+	}
+	.footer .wrap{
+		text-align: center;
+		width: 75%;
+		display: flex;
+		flex-direction: column;
+	}
+	.footer__contacto{
+		width: 100%;
+	}
+	.footer__contacto--mod a{
+		width: 40%;
+		margin-right: 50px;
+		margin-left: 25px;
+	}
+	.footer__form{
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+	}
+	.footer__form--col1, .footer__form--col2{
+		text-align: left;
+		width: 50%;
+	}
+	input[type="text"],
+	input[type="email"]{
+		width: 100%;
+		padding: 7px;
+	}
+	.form--checkbox{
+		display: flex;
+		flex-direction: column;
+		font-size: .9em;
+	}
+	.form--checkbox label{
+		margin: 2px;
+	}
+	.footer__form--col2 textarea{
+		width: 100%;
+		height: 180px;
+	}
+	.footer__form--col2 .btn{
+		font-size: 1.2em;
+	}
+}
+
+				/*-----media-querie mobile--550px-----*/
+
+@media screen and (max-width: 550px){
+	h1{
+		margin: 20px 0;
+		font-size: 1.6em;
+	}
+	h2{
+		margin-bottom: 15px;
+		font-size: .9em;
+	}
+	h3{
+		font-size: 1.4em;
+	}
+
+	/*-----header and portada-----*/
+
+	.wrap{
+		width: 97%;
+		text-align: center;
+	}
+	.header{
+		position: static;
+	}
+	.header__logo{
+		margin: 15px 0 20px 40px;
+	}
+	.header__nav{
+		width: 100%;
+		display: block;
+		float: none;
+		background: rgba(255, 60, 88, .8);
+		position: fixed;
+		left: -100%;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		z-index: 2;
+		margin: 0;
+		text-align: center;
+		display: flex;
+		align-items: center;
+		transition: .5s;
+	}
+	.active{
+		left: 0;
+	}
+	.header__nav ul{
+		padding: 0;
+		flex: 1;
+	}
+	.header__nav li{
+		margin: 5px 0;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		border-top: 1px solid #fff;
+	}
+	.header__nav li:last-of-type{
+		border-bottom: 1px solid #fff;
+		padding-bottom: 3px;
+	}
+	.header__nav li:before{
+		content: none;
+	}
+	.header__nav a{
+		margin: 10px;
+	}
+	.portada__btn{
+		font-size: 1em;
+		margin-bottom: 40px;
+	}
+	.burguer__btn{
+		display: block;
+	}
+
+	/*-----principal-----*/
+	.main__title{
+		font-size: 1.6em;
+		width: 100%;
+	}
+	.main__guitarra li{
+		font-size: 1em;
+	}
+	.wrapper__a ol, .wrapper__b ol{
+		padding-left: 0;
+	}
+
+
+	/*-----footer-----*/
+
+	.footer{
+		height: auto;
+	}
+	.footer .wrap{
+		text-align: left;
+		width: 75%;
+		display: flex;
+		flex-direction: column;
+	}
+	.footer__contacto{
+		width: 100%;
+	}
+	.footer__contacto a{
+		font-size: .75em;
+		margin-left: 0;
+		margin-right: 5px;
+	}
+	.footer__form{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+	.footer__form--col1, .footer__form--col2{
+		width: 100%;
+	}
+	.nombre, .e-mail{
+		width: 100%;
+		padding: 7px;
+	}
+	.form--checkbox{
+		display: flex;
+		flex-direction: column;
+		font-size: 1em;
+	}
+	.form--checkbox label{
+		margin: 3px;
+	}
+	.footer__form--col2 textarea{
+		width: 100%;
+		height: 180px;
+	}
+	.footer__form--col2 .btn{
+		font-size: 1em;
+	}
+}
+.video__youtube{
+	position: relative;
+	padding-top: 56.25%;
+}
+.video__youtube--src{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+}
+video{
+	width: 100%;
+}
+
+/*-------media-querie para las pantallas de retina--background---*/
+
+@media screen and (min-device-pixel-ratio: 2){
+
+}

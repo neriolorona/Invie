@@ -1,0 +1,164 @@
+<DOCTYPE html>
+<html lang="esp">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Invie</title>
+		<link href='https://fonts.googleapis.com/css?family=Allerta' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+		<link rel="STYLESHEET" type="text/css" href="css/style.css"/>
+ 	</head>
+ 	<body>
+
+ 		<section class="portada">
+	 		<div class="wrap">
+		 		<header class="header">
+		 			<img src="images/invie.png" srcset="images/invie.png 1x, images/invie2x.png 2x" alt="logo" class="header__logo"/>
+		 			<span class="burguer__btn icon-menu" id="burguer__btn"></span>
+		 			<nav class="header__nav" id="header__nav">
+		 				<ul>
+		 					<li><a href="#">Home</a></li>
+		 					<li><a href="index.html#guitarras">Guitarras</a></li>
+		 					<li><a href="precio.html">Precios</a></li>
+		 				</ul>
+		 			</nav>
+		 		</header>
+	 			<h1>Guitarras <span>Invie</span>sibles</h1>
+	 			<h2>Sé la estrella de rock que siempre quisiste ser</h2>
+	 			<button class="portada__btn"><a href="">Conoce más</a></button>
+	 		</div>
+ 		</section>
+
+ 		<section class="main">
+	 		<div class="wrap">
+	 			<h3 class="main__title">Nuestras Guitarras</h3>
+	 			<div class="video__youtube">
+	 			<iframe  class="video__youtube--src" width="560" height="315" src="https://www.youtube.com/embed/R1dW8M4EqYY" frameborder="0" allowfullscreen></iframe>
+	 			</div>
+	 			<!--<video src="videos/movie.mp4" width="320" height="240" alt="video"></video>-->
+	 			<article class="main__guitarra" id="guitarras"> <!--guitarra a-->
+	 				<img data-src="images/invie-acustica.png" alt="Guitarra Acústica" class="main__img--a" />
+	 				<div class="wrapper__a">
+	 					<h3>Invie Acústica</h3>
+		 				<ol>
+		 					<li>Estilo vintage</li>
+		 					<li>Madera Pura</li>
+		 					<li>Incluye estuche invisible de aluminio</li>
+		 				</ol>
+	 				</div>
+	 			</article>
+	 			<article class="main__guitarra" id="guitarras">  <!--guitarra b-->
+	 				<img data-src="images/invie-classic.png" alt="Invie Classic" class="main__img--b" />
+	 				<div class="wrapper__b">
+		 				<h3>Invie Classic</h3>
+		 				<ol>
+		 					<li>Estilo vintage</li>
+		 					<li>Liviana</li>
+		 					<li>Inicia tu camino como Rockstar</li>
+		 				</ol>
+	 				</div>
+	 			</article>
+	 		</div>
+ 		</section>
+
+ 		<footer class="footer">
+	 		<div class="wrap">
+
+	 			<div class="footer__contacto">
+	 				<img data-src="images/invie-white.png" alt="Logotipo"/>
+	 				<div class="footer__contacto--mod">
+	 					<a href="#">
+	 						<strong>Teléfono</strong>
+	 						<span>+56971927522</span>
+	 					</a>
+	 					<a href="#">
+	 						<strong>E-mail</strong>
+	 						<span>contacto@invie.com</span>
+	 					</a>
+	 				</div>
+	 			</div>
+
+	 			<div class="footer__form">
+		 			<div class="footer__form--col1">
+		 				<form>
+		 					<label for="Nombre">Nombre<input class="nombre" type="text" action="name" name="name"/></label>
+		 					<label for="E-mail">E-mail<input class="e-mail" type="email" action="email" name="name"/></label>
+		 					<div class="form--sexo">
+			 					<label for="Mujer"><input type="radio" action="sexo" name="sexo" checked/>Mujer</label>
+			 					<label for="Hombre"><input type="radio" action="sexo" name="sexo"/>Hombre</label>
+		 					</div>
+		 					<div class="form--checkbox">
+			 					<label for="Cotizaciones"><input type="checkbox" action="checkbox" name="checkbox" checked/>Cotizaciones</label>
+			 					<label for="Reclamos"><input type="checkbox" action="checkbox" name="checkbox"/>Reclamos</label>
+			 					<label for="Comentarios"><input type="checkbox" action="checkbox" name="checkbox"/>Comentarios</label>
+			 					<label for="Otros"><input type="checkbox" action="checkbox" name="checkbox"/>Otros</label>
+		 					</div>
+		 				</form>
+		 			</div>
+		 			<div class="footer__form--col2">
+		 				<form>
+		 					<label for="Comentarios">Comentarios</label>
+		 					<textarea name="comentarios" cols="30" rows="7"></textarea>
+		 					<label for="Submit"><input type="submit" action="submit" name="enviar" class="btn" /></label>
+		  				</form>
+	 				</div>
+	 			</div>
+	 		</div>
+ 		</footer>
+
+ 		<!-- Libreria para hammerjs-->
+ 		<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+
+ 		<!-- Libreria para blazyjs-->
+ 		<script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.6.2/blazy.min.js"></script>
+
+ 		<script language="javascript">
+ 			var $burguerBtn = document.getElementById('burguer__btn');
+ 			var $menu = document.getElementById('header__nav');
+
+ 			var consulta = window.matchMedia('(max-width: 800px)');
+ 			consulta.addListener(mediaQuery);
+
+ 			function mediaQuery(){
+	 			if(consulta.matches){
+	 				console.log('se cumplió la condición');
+
+	 				$burguerBtn.addEventListener('touchstart', toggleMenu)
+ 	 			}
+	 			else{
+	 				console.log('no se cumplió la condición');
+	 			}
+ 			}
+ 			mediaQuery();
+
+ 			/*-------Blazy------para cargar las imagenes progresivamente*/
+
+ 			var bLazy = new Blazy({
+			    selector: 'img'
+			});
+ 			//function para mostrar y quitar el menu de nuestra pagina con un touchstart
+ 			function toggleMenu(){
+ 					$menu.classList.toggle('active');
+ 			};
+
+ 			//Funciones para el Hammerjs
+ 			//funcion para esconder el menu
+ 			function hideMenu(){
+ 				$menu.classList.remove('active');
+ 			}
+ 			//Funcion para mostrar el menu
+ 			function showMenu(){
+ 				$menu.classList.add('active');
+ 			}
+
+ 			//-------Hammerjs-------  para el swipeleft y swiperight
+ 			var $body = document.body
+
+ 			var gestos = new Hammer($body);
+			gestos.on('swipeleft', hideMenu);
+			gestos.on('swiperight', showMenu);
+
+ 		</script>
+
+ 	</body>
+</html>
