@@ -146,14 +146,24 @@ h3{
 /*----- Principal-----*/
 
 .main{
-	height: 630px;
+	height: auto;
 }
 .main__title{
+	text-align: center;
 	margin-top: 40px;
 	margin-left: 0;
 	font-size: 2.2em;
 	color: #1F313C;
 	font-family: 'Montserrat', sans-serif;
+}
+.video__demo{
+	max-width: 500px;
+	max-height: 315px;
+	margin: 0 auto;
+	margin-bottom: 80px;
+}
+.video__youtube{
+	border: 2px solid #3A596B;
 }
 .wrapper__a{
 	width: 400px;
@@ -163,7 +173,7 @@ h3{
 .wrapper__b{
 	margin-left: 350px;
 	width: 400px;
-	margin-bottom: 30px;
+	margin-bottom: 60px;
 }
 .main__guitarra{
 	margin: 40px 10px;
@@ -272,7 +282,7 @@ table, td, th{
 @media screen and (max-width: 800px){
 
 	.wrap{
-		width: 100%;
+		width: 97%;
 	}
 	h1{
 		font-size: 3.5em;
@@ -294,6 +304,9 @@ table, td, th{
 		margin-bottom: 40px;
 	}
 	/*-----principal------*/
+	.video__demo{
+		margin-bottom: 30px;
+	}
 	.main__guitarra{
 		text-align: center;
 	}
@@ -308,6 +321,9 @@ table, td, th{
 	}
 	.wrapper__a li, .wrapper__b li{
 		list-style-type: none;
+	}
+	.wrapper__a ol, .wrapper__b ol{
+		padding: 0;
 	}
 	/*----------precio.hmtl------*/
 
