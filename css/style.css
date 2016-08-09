@@ -157,7 +157,7 @@ h3{
 	font-family: 'Montserrat', sans-serif;
 }
 .video__demo{
-	max-width: 500px;
+	max-width: 560px;
 	max-height: 315px;
 	margin: 0 auto;
 	margin-bottom: 80px;
@@ -586,23 +586,25 @@ table, td, th{
 	.footer__form--col2 .btn{
 		font-size: 1em;
 	}
+	.video__youtube{
+		border: none;
+		position: relative;
+		padding-top: 56.25%;
+	}
+	.video__youtube--src{
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		right: 0;
+		left: 0;
+		bottom: 0;
+	}
+	video{
+		width: 100%;
+	}
 }
-.video__youtube{
-	position: relative;
-	padding-top: 56.25%;
-}
-.video__youtube--src{
-	height: 100%;
-	width: 100%;
-	position: absolute;
-	top: 0;
-	right: 0;
-	left: 0;
-	bottom: 0;
-}
-video{
-	width: 100%;
-}
+
 
 /*-------media-querie para las pantallas de retina--background---*/
 
